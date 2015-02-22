@@ -1,0 +1,7 @@
+<% if params[:name].blank? && params[:age].blank? %>
+    <h1>WHO ARE YOU?</h1>
+<% else %>
+    <h1><%= @person.introduce %></h1>
+    <p>I was born in <%= @person.birth_year %></p>
+    <p>My nickname is apparently "<%= @person.nickname %>"?</p>
+<% end %>
